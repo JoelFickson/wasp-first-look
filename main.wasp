@@ -1,0 +1,16 @@
+app waspHype {
+  wasp: {
+    version: "^0.13.2"
+  },
+  title: "Trying Out Wasp"
+}
+
+route RootRoute { path: "/", to: MainPage }
+page MainPage {
+  component: import { MainPage } from "@src/pages/MainPage"
+}
+
+route SecondRoute { path: "/really", to: ReallyPage }
+page ReallyPage {
+  component: import { ReallyPage } from "@src/pages/ReallyPage"
+}
